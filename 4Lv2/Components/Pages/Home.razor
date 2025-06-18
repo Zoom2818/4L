@@ -1,0 +1,234 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+<div class="backgroud-home">
+
+    <!-- Чекбокс и бургер-иконка -->
+    <div class="conteiner">
+        <input type="checkbox" id="burger-toggle">
+        <label for="burger-toggle" class="burger-label">
+            <!-- Бургер-иконка SVG -->
+            <img src="burger.png" alt="Burger Menu">
+        </label>
+
+        <!-- Меню -->
+        <div class="side-menu">
+            <div class="menu-header">
+                <div class="icon-box">
+                    <!-- повтор бургер-иконки -->
+                    <svg viewBox="0 0 24 24">
+                        <rect y="5" width="24" height="3"></rect>
+                        <rect y="11" width="24" height="3"></rect>
+                        <rect y="17" width="24" height="3"></rect>
+                    </svg>
+                </div>
+                <div class="icon-box">
+                    <!-- mail-иконка -->
+                    <svg viewBox="0 0 24 24">
+                        <path d="M2 6h20v12H2z" fill="none" stroke="#fff" stroke-width="2"/>
+                        <polyline points="2,6 12,13 22,6" fill="none" stroke="#fff" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="icon-box">
+                    <!-- телефон-иконка -->
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.09-.21 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.11a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.21 1.09z" fill="none" stroke="#fff" stroke-width="2"/>
+                    </svg>
+                </div>
+                <!-- крест закрытия -->
+                <label for="burger-toggle" class="close-menu">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="4" y1="4" x2="20" y2="20" stroke="#fff" stroke-width="3"/>
+                        <line x1="20" y1="4" x2="4" y2="20" stroke="#fff" stroke-width="3"/>
+                    </svg>
+                </label>
+            </div>
+            <div class="menu-divider"></div>
+            <nav>
+                <a href="#">Главная</a>
+                <a href="#">Наши работы</a>
+                <a href="#">Фотогалерея</a>
+                <a href="#">Полезные статьи</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="footer">
+                4L
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="home-mainlogo">
+        <button @onclick="RefreshPage">
+            <img src="/Icons/LOGO.svg"/>
+        </button>
+    </div>
+    <div class="line"><img src="Icons/Line 1.svg"/></div>
+    <p class="main-description">4LMUSIK - это профессиональная студия звукозаписи в г. Самара.<br/>Мы работаем с музыкой уже более 300 лет и предоставляем<br/> широкий спектр услуг в данной сфере.</p>
+    <div class="elements">
+        <div class="service-container">
+            <img class="microphone" src="/Icons/microphone.svg"/>
+            <p class="Description">Подскажем как <br/>правильно исполнить</p>
+        </div>
+        <div>
+            <img class="service-line" src="/Icons/Line 2.svg"/>
+        </div>
+        <div class="service-container">
+            <img class="cd" src="/Icons/cd.svg"/>
+            <p class="Description">Найдём или напишем <br/>аранжировку</p>
+        </div>
+        <div>
+            <img class="service-line" src="/Icons/Line 2.svg"/>
+        </div>
+        <div class="service-container">
+            <img class="piano" src="/Icons/piano.svg"/>
+            <p class="Description">Поправим голос <br/>в тональность музыки</p>
+        </div>
+        <div>
+            <img class="service-line" src="/Icons/Line 2.svg"/>
+        </div>
+        <div class="service-container">
+            <img class="speaker" src="/Icons/speaker.svg"/>
+            <p class="Description">Сделаем звучание <br/>на уровне известных артистов</p>
+        </div>
+    </div>
+    <div class="container-signup">
+        <button>ЗАПИСАТЬСЯ</button>
+    </div>
+    <p class="PackageOfServices-Name">ПАКЕТЫ УСЛУГ</p>
+    <div class="PackageOfServices-Line"><img src="Icons/Line 3.svg"/></div>
+    <div class="cont">
+        <div class="card1">
+            <h2>Light</h2>
+            <div class="equalizer1">
+                <img src="/Icons/wave1.svg"/>
+            </div>
+            <ul class="features1">
+                <li>1,5 часа записи</li>
+                <li>Коррекция вокала в тональность</li>
+                <li>Сведение и мастеринг</li>
+                <li>*до 2 человек</li>
+            </ul>
+            <div class="padding-LPB1">
+                <div class="price-separator1"></div>
+                <div class="price1">5555<span class="currency1">₽</span></div>
+                <div class="btn1">
+                    <button>ЗАКАЗАТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <h2>Medium</h2>
+            <div class="equalizer2">
+                <img src="/Icons/wave2.svg"/>
+            </div>
+            <ul class="features2">
+                <li>3 часа записи</li>
+                <li>Коррекция вокала в тональность</li>
+                <li>Креативные эффекты</li>
+                <li>Сведение и мастеринг</li>
+                <li>*до 3 человек</li>
+            </ul>
+            <div class="padding-LPB2">
+                <div class="price-separator2"></div>
+                <div class="price2">8888<span class="currency2">₽</span></div>
+                <div class="btn2">
+                    <button>ЗАКАЗАТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card3">
+            <h2>Pro</h2>
+            <div class="equalizer3">
+                <img src="/Icons/wave3.svg"/>
+            </div>
+            <ul class="features3">
+                <li>5 часа записи</li>
+                <li>Коррекция вокала в тональность</li>
+                <li>Креативные эффекты</li>
+                <li>Сведение и мастеринг 3мя звукоинженерами</li>
+                <li>*до 5 человек</li>
+            </ul>
+            <div class="padding-LPB3">
+                <div class="price-separator3"></div>
+                <div class="price3">11111<span class="currency3">₽</span></div>
+                <div class="btn3">
+                    <button>ЗАКАЗАТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="description-after-cards">* Если ни один пакет Вам не подходит, то рассчет производится по тарифу.<br/> Теперь подробно разберём сколько стоит записать песню в студии.</p>
+    <div class="container-vocals">
+        <div class="text-container-vocals">
+            <h1 class="title-description-vocals">ЗАПИСЬ ВОКАЛА</h1>
+            <p class="description-vocals">В студии 4LMUSIK можно записать песню на свадьбу или день рождения, сделать авторский продукт, годный для радио, записать аудио рекламу или озвучку для вашего видео ролика. Оплата почасовая.</p>
+            <p class="price-vocals">от 1500₽</p>
+            <a href="#" class="button-vocals">ЗАКАЗАТЬ</a>
+        </div>
+        <div class="image-container-vocals">
+            <img src="/Icons/headphones.svg">
+        </div>
+    </div>
+
+    <div class="container-ebashit">
+        <div class="text-container-vocals">
+            <h1 class="title-description-vocals">СВЕДЕНИЕ И МАСТЕРИНГ</h1>
+            <p class="description-vocals">Ни одна песня не будет хорошо звучать без качественной обработки. В нашей студии вы можете заказать сведение и мастеринг своего проекта, записанного у нас или в любой другой студии звукозаписи.</p>
+            <p class="price-vocals">от 5000₽</p>
+            <a href="#" class="button-vocals">ЗАКАЗАТЬ</a>
+        </div>
+        <div class="image-container-vocals">
+            <img src="/Icons/ebashit.svg">
+        </div>
+    </div>
+
+    <div class="container-pianinoballerino">
+        <div class="text-container-vocals">
+            <h1 class="title-description-vocals">АРАНЖИРОВКА</h1>
+            <p class="description-vocals">Вам нужна аранжировка какой-либо песни для её исполнения или записи кавера? Наши музыканты подберут любую аранжировку по вашему желанию или напишут оригинальную по подобию высланных вами примеров.</p>
+            <p class="price-vocals">от 6000₽</p>
+            <a href="#" class="button-vocals">ЗАКАЗАТЬ</a>
+        </div>
+        <div class="image-container-vocals">
+            <img src="/Icons/pianinoballerino.svg">
+        </div>
+    </div>
+
+    <div class="container-Notebook">
+        <div class="text-container-vocals">
+            <h1 class="title-description-vocals">НАПИСАНИЕ ТЕКСТА</h1>
+            <p class="description-vocals">Хотите сделать песню в подарок, но не можете придумать оригинальный текст? Наши авторы напишут текст для песни на свадьбу, день рождения, для трэка или батла на любую тему и в любом стиле по вашему референсу.</p>
+            <p class="price-vocals">от 5000₽</p>
+            <a href="#" class="button-vocals">ЗАКАЗАТЬ</a>
+        </div>
+        <div class="image-container-vocals">
+            <img src="/Icons/Notebook.svg">
+        </div>
+    </div>
+    <p class="end-description">Cтудия звукозаписи в Самаре</p>
+    <div class="end-line-cont"><img class="end-line" src="/Icons/Line 8.svg"/></div>
+    <div class="location">
+        <img src="Icons/location.svg"/>
+        <span class="end-location-name"><a class="no-underline" href="https://yandex.ru/maps/51/samara/house/molodogvardeyskaya_ulitsa_80/YUkYdg5mSUAFQFtpfX15dnxlbA==/?ll=50.096226%2C53.187148&z=17.6">Молодогвардейская ул., 80</a></span>
+    </div>
+    <!-- <img class="end-icons" src="/Icons/endicons.svg"/> -->
+    <div class="end-iconss">
+        <img class="endicon1" src="/Icons/endicon1.svg"/>
+        <img class="endicon2" src="/Icons/endicon2.svg"/>
+        <img class="endicon3" src="/Icons/endicon3.svg"/>
+        <img class="endicon4" src="/Icons/endicon4.svg"/>
+    </div>
+</div>
+
+
+
+
+@code {
+    private void RefreshPage()
+    {
+        NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+    }
+}
