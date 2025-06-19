@@ -1,0 +1,31 @@
+﻿@page "/ServicePackages"
+<div class="window-SP">
+    <div class="cont-SP">
+        <p class="SP-title">ЗАПИСЬ НА ПАКЕТ УСЛУГ</p>
+        <input class="SP-text" type="text" placeholder="ИМЯ" required>
+        <div class="inline">
+            <input class="SP-text2" type="tel" placeholder="ТЕЛЕФОН" required>
+            <input class="SP-text2" type="email" placeholder="ПОЧТА" required>
+        </div>
+        <div class="inline2">
+            <label class="SP" for="package">ВЫБЕРИТЕ ПАКЕТ</label>
+            <select class="window" id="package"> 
+                <option value="light">LIGHT</option>
+                <option value="medium">MEDIUM</option>
+                <option value="pro">PRO</option>
+            </select>
+
+            <input class="date-SP" type="date" placeholder="ДАТА" required>
+        </div>
+        
+
+        <button class="btn-SP" type="submit">ЗАПИСАТЬСЯ</button>
+    </div>
+</div>
+
+
+
+
+@code {
+    
+}

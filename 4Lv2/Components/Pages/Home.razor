@@ -1,40 +1,16 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
 <div class="backgroud-home">
-
-    <!-- Чекбокс и бургер-иконка -->
     <div class="conteiner">
         <input type="checkbox" id="burger-toggle">
         <label for="burger-toggle" class="burger-label">
-            <!-- Бургер-иконка SVG -->
-            <img src="burger.png" alt="Burger Menu">
+            <img src="Icons/hamburger.svg">
         </label>
-
-        <!-- Меню -->
         <div class="side-menu">
             <div class="menu-header">
                 <div class="icon-box">
-                    <!-- повтор бургер-иконки -->
-                    <svg viewBox="0 0 24 24">
-                        <rect y="5" width="24" height="3"></rect>
-                        <rect y="11" width="24" height="3"></rect>
-                        <rect y="17" width="24" height="3"></rect>
-                    </svg>
+                    <img src="Icons/hamburger.svg"/>
                 </div>
-                <div class="icon-box">
-                    <!-- mail-иконка -->
-                    <svg viewBox="0 0 24 24">
-                        <path d="M2 6h20v12H2z" fill="none" stroke="#fff" stroke-width="2"/>
-                        <polyline points="2,6 12,13 22,6" fill="none" stroke="#fff" stroke-width="2"/>
-                    </svg>
-                </div>
-                <div class="icon-box">
-                    <!-- телефон-иконка -->
-                    <svg viewBox="0 0 24 24">
-                        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.09-.21 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.11a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.21 1.09z" fill="none" stroke="#fff" stroke-width="2"/>
-                    </svg>
-                </div>
-                <!-- крест закрытия -->
                 <label for="burger-toggle" class="close-menu">
                     <svg viewBox="0 0 24 24">
                         <line x1="4" y1="4" x2="20" y2="20" stroke="#fff" stroke-width="3"/>
@@ -45,9 +21,7 @@
             <div class="menu-divider"></div>
             <nav>
                 <a href="#">Главная</a>
-                <a href="#">Наши работы</a>
-                <a href="#">Фотогалерея</a>
-                <a href="#">Полезные статьи</a>
+                <a href="/profile">Вход в аккаунт</a>
                 <a href="#">Отзывы</a>
                 <a href="#">Контакты</a>
             </nav>
@@ -59,9 +33,7 @@
 
     
     <div class="home-mainlogo">
-        <button @onclick="RefreshPage">
             <img src="/Icons/LOGO.svg"/>
-        </button>
     </div>
     <div class="line"><img src="Icons/Line 1.svg"/></div>
     <p class="main-description">4LMUSIK - это профессиональная студия звукозаписи в г. Самара.<br/>Мы работаем с музыкой уже более 300 лет и предоставляем<br/> широкий спектр услуг в данной сфере.</p>

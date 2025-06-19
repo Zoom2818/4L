@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\Icons\\endicons.svg"
     },
     {
+      "Id": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\Icons\\hamburger.svg",
+      "PackagePath": "staticwebassets\\Icons\\hamburger.svg"
+    },
+    {
       "Id": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\Icons\\headphones.svg",
       "PackagePath": "staticwebassets\\Icons\\headphones.svg"
     },

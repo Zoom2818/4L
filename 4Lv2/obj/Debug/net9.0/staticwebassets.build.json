@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VP6LQEKCgnoTa7112m7f1mKyHy/jMqPZqX0ud/bluEA=",
+  "Hash": "WaPI8fBfV/hKKnTkkvGfn6LGJYWBKcgMY/2y45+woKk=",
   "Source": "4Lv2",
   "BasePath": "_content/4Lv2",
   "Mode": "Default",
@@ -561,6 +561,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\c7h99a0z55-kypqw8vmzx.gz",
+      "SourceId": "4Lv2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/4Lv2",
+      "RelativePath": "Icons/hamburger#[.{fingerprint=kypqw8vmzx}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\Icons\\hamburger.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "kog2cwq0sg",
+      "Integrity": "9Gx97nDvgToq24hNjsj41VDlYEaAsLV5twmLOzYNmfs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\Icons\\hamburger.svg"
     },
     {
       "Identity": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\crhgtb8otr-hrwsygsryq.gz",
@@ -1424,12 +1445,12 @@
       "OriginalItemSpec": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\Icons\\Line 2.svg"
     },
     {
-      "Identity": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-dbjvpia78o.gz",
+      "Identity": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-7qqy54x0wj.gz",
       "SourceId": "4Lv2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/4Lv2",
-      "RelativePath": "app#[.{fingerprint=dbjvpia78o}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=7qqy54x0wj}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1438,8 +1459,8 @@
       "RelatedAsset": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "trlx995fhf",
-      "Integrity": "h5azvnQFGy2y7GON68Ypt4h4F5K1HTqPu3KMUFSkNQU=",
+      "Fingerprint": "l74unwqryk",
+      "Integrity": "LzieBNB/7JiBx95snMzBE3B8VYVVaMcqDjkYRv7VTxw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\app.css"
@@ -1522,8 +1543,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dbjvpia78o",
-      "Integrity": "iRTZ+R8xJX1dRjSpyD3HBkjwRsBmKQ39KafNp4wxjvs=",
+      "Fingerprint": "7qqy54x0wj",
+      "Integrity": "MX8/gNVj35fnHG/1SH3tsh1NCF3CWDNck0uUwr30nhw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
@@ -1779,6 +1800,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Icons\\endicons.svg"
+    },
+    {
+      "Identity": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\Icons\\hamburger.svg",
+      "SourceId": "4Lv2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\",
+      "BasePath": "_content/4Lv2",
+      "RelativePath": "Icons/hamburger#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kypqw8vmzx",
+      "Integrity": "FEqwspLE7vaiBjFN0nLnaRNKSXYO78CjafX1xkh2p+8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\hamburger.svg"
     },
     {
       "Identity": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\Icons\\headphones.svg",
@@ -3022,13 +3064,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "app.css",
-      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-dbjvpia78o.gz",
+      "Route": "app.7qqy54x0wj.css",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-7qqy54x0wj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000230255584"
+          "Quality": "0.000239005736"
         }
       ],
       "ResponseHeaders": [
@@ -3038,19 +3080,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4342"
+          "Value": "4183"
         },
         {
           "Name": "ETag",
-          "Value": "\"h5azvnQFGy2y7GON68Ypt4h4F5K1HTqPu3KMUFSkNQU=\""
+          "Value": "\"LzieBNB/7JiBx95snMzBE3B8VYVVaMcqDjkYRv7VTxw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 21:49:10 GMT"
+          "Value": "Thu, 19 Jun 2025 22:07:21 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3066,18 +3108,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"iRTZ+R8xJX1dRjSpyD3HBkjwRsBmKQ39KafNp4wxjvs=\""
+          "Value": "W/\"MX8/gNVj35fnHG/1SH3tsh1NCF3CWDNck0uUwr30nhw=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "7qqy54x0wj"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-iRTZ+R8xJX1dRjSpyD3HBkjwRsBmKQ39KafNp4wxjvs="
+          "Value": "sha256-MX8/gNVj35fnHG/1SH3tsh1NCF3CWDNck0uUwr30nhw="
         }
       ]
     },
     {
-      "Route": "app.css",
+      "Route": "app.7qqy54x0wj.css",
       "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3087,7 +3137,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18079"
+          "Value": "22276"
         },
         {
           "Name": "Content-Type",
@@ -3095,121 +3145,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iRTZ+R8xJX1dRjSpyD3HBkjwRsBmKQ39KafNp4wxjvs=\""
+          "Value": "\"MX8/gNVj35fnHG/1SH3tsh1NCF3CWDNck0uUwr30nhw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 21:49:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iRTZ+R8xJX1dRjSpyD3HBkjwRsBmKQ39KafNp4wxjvs="
-        }
-      ]
-    },
-    {
-      "Route": "app.css.gz",
-      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-dbjvpia78o.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4342"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"h5azvnQFGy2y7GON68Ypt4h4F5K1HTqPu3KMUFSkNQU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 21:49:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-h5azvnQFGy2y7GON68Ypt4h4F5K1HTqPu3KMUFSkNQU="
-        }
-      ]
-    },
-    {
-      "Route": "app.dbjvpia78o.css",
-      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-dbjvpia78o.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000230255584"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4342"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"h5azvnQFGy2y7GON68Ypt4h4F5K1HTqPu3KMUFSkNQU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 21:49:10 GMT"
+          "Value": "Thu, 19 Jun 2025 22:07:21 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"iRTZ+R8xJX1dRjSpyD3HBkjwRsBmKQ39KafNp4wxjvs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dbjvpia78o"
+          "Value": "7qqy54x0wj"
         },
         {
           "Name": "label",
@@ -3217,13 +3167,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-iRTZ+R8xJX1dRjSpyD3HBkjwRsBmKQ39KafNp4wxjvs="
+          "Value": "sha256-MX8/gNVj35fnHG/1SH3tsh1NCF3CWDNck0uUwr30nhw="
         }
       ]
     },
     {
-      "Route": "app.dbjvpia78o.css",
-      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\app.css",
+      "Route": "app.7qqy54x0wj.css.gz",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-7qqy54x0wj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3232,7 +3182,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18079"
+          "Value": "4183"
         },
         {
           "Name": "Content-Type",
@@ -3240,56 +3190,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iRTZ+R8xJX1dRjSpyD3HBkjwRsBmKQ39KafNp4wxjvs=\""
+          "Value": "\"LzieBNB/7JiBx95snMzBE3B8VYVVaMcqDjkYRv7VTxw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 21:49:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dbjvpia78o"
-        },
-        {
-          "Name": "label",
-          "Value": "app.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iRTZ+R8xJX1dRjSpyD3HBkjwRsBmKQ39KafNp4wxjvs="
-        }
-      ]
-    },
-    {
-      "Route": "app.dbjvpia78o.css.gz",
-      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-dbjvpia78o.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4342"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"h5azvnQFGy2y7GON68Ypt4h4F5K1HTqPu3KMUFSkNQU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 21:49:10 GMT"
+          "Value": "Thu, 19 Jun 2025 22:07:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3307,7 +3212,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dbjvpia78o"
+          "Value": "7qqy54x0wj"
         },
         {
           "Name": "label",
@@ -3315,7 +3220,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-h5azvnQFGy2y7GON68Ypt4h4F5K1HTqPu3KMUFSkNQU="
+          "Value": "sha256-LzieBNB/7JiBx95snMzBE3B8VYVVaMcqDjkYRv7VTxw="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-7qqy54x0wj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000239005736"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4183"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LzieBNB/7JiBx95snMzBE3B8VYVVaMcqDjkYRv7VTxw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 22:07:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MX8/gNVj35fnHG/1SH3tsh1NCF3CWDNck0uUwr30nhw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MX8/gNVj35fnHG/1SH3tsh1NCF3CWDNck0uUwr30nhw="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MX8/gNVj35fnHG/1SH3tsh1NCF3CWDNck0uUwr30nhw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 22:07:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MX8/gNVj35fnHG/1SH3tsh1NCF3CWDNck0uUwr30nhw="
+        }
+      ]
+    },
+    {
+      "Route": "app.css.gz",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\yntoh4wnz6-7qqy54x0wj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LzieBNB/7JiBx95snMzBE3B8VYVVaMcqDjkYRv7VTxw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 22:07:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LzieBNB/7JiBx95snMzBE3B8VYVVaMcqDjkYRv7VTxw="
         }
       ]
     },
@@ -6676,6 +6718,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-0jJuG8pJTB5crpuXaFN5IlgWN4lvIZQ13NxMB2Yssno="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/hamburger.kypqw8vmzx.svg",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\c7h99a0z55-kypqw8vmzx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001886792453"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "529"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9Gx97nDvgToq24hNjsj41VDlYEaAsLV5twmLOzYNmfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 21:49:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FEqwspLE7vaiBjFN0nLnaRNKSXYO78CjafX1xkh2p+8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kypqw8vmzx"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/hamburger.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FEqwspLE7vaiBjFN0nLnaRNKSXYO78CjafX1xkh2p+8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/hamburger.kypqw8vmzx.svg",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\Icons\\hamburger.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FEqwspLE7vaiBjFN0nLnaRNKSXYO78CjafX1xkh2p+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 21:49:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kypqw8vmzx"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/hamburger.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FEqwspLE7vaiBjFN0nLnaRNKSXYO78CjafX1xkh2p+8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/hamburger.kypqw8vmzx.svg.gz",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\c7h99a0z55-kypqw8vmzx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "529"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9Gx97nDvgToq24hNjsj41VDlYEaAsLV5twmLOzYNmfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 21:49:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kypqw8vmzx"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/hamburger.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9Gx97nDvgToq24hNjsj41VDlYEaAsLV5twmLOzYNmfs="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/hamburger.svg",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\c7h99a0z55-kypqw8vmzx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001886792453"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "529"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9Gx97nDvgToq24hNjsj41VDlYEaAsLV5twmLOzYNmfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 21:49:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FEqwspLE7vaiBjFN0nLnaRNKSXYO78CjafX1xkh2p+8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FEqwspLE7vaiBjFN0nLnaRNKSXYO78CjafX1xkh2p+8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/hamburger.svg",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\wwwroot\\Icons\\hamburger.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FEqwspLE7vaiBjFN0nLnaRNKSXYO78CjafX1xkh2p+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 21:49:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FEqwspLE7vaiBjFN0nLnaRNKSXYO78CjafX1xkh2p+8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/hamburger.svg.gz",
+      "AssetFile": "C:\\Users\\alexa\\RiderProjects\\4Lv2\\4Lv2\\obj\\Debug\\net9.0\\compressed\\c7h99a0z55-kypqw8vmzx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "529"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9Gx97nDvgToq24hNjsj41VDlYEaAsLV5twmLOzYNmfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 21:49:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9Gx97nDvgToq24hNjsj41VDlYEaAsLV5twmLOzYNmfs="
         }
       ]
     },
