@@ -1,4 +1,5 @@
 ﻿@page "/"
+@rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 <div class="backgroud-home">
     <div class="conteiner">
@@ -65,7 +66,7 @@
         </div>
     </div>
     <div class="container-signup">
-        <button>ЗАПИСАТЬСЯ</button>
+        <button @onclick="NavigateToRate" >ЗАПИСАТЬСЯ</button>
     </div>
     <p class="PackageOfServices-Name">ПАКЕТЫ УСЛУГ</p>
     <div class="PackageOfServices-Line"><img src="Icons/Line 3.svg"/></div>
@@ -85,7 +86,7 @@
                 <div class="price-separator1"></div>
                 <div class="price1">5555<span class="currency1">₽</span></div>
                 <div class="btn1">
-                    <button>ЗАКАЗАТЬ</button>
+                    <button @onclick="NavigateToServicePackages" >ЗАКАЗАТЬ</button>
                 </div>
             </div>
         </div>
@@ -106,7 +107,7 @@
                 <div class="price-separator2"></div>
                 <div class="price2">8888<span class="currency2">₽</span></div>
                 <div class="btn2">
-                    <button>ЗАКАЗАТЬ</button>
+                    <button @onclick="NavigateToServicePackages" >ЗАКАЗАТЬ</button>
                 </div>
             </div>
         </div>
@@ -127,7 +128,7 @@
                 <div class="price-separator3"></div>
                 <div class="price3">11111<span class="currency3">₽</span></div>
                 <div class="btn3">
-                    <button>ЗАКАЗАТЬ</button>
+                    <button @onclick="NavigateToServicePackages">ЗАКАЗАТЬ</button>
                 </div>
             </div>
         </div>
@@ -138,7 +139,7 @@
             <h1 class="title-description-vocals">ЗАПИСЬ ВОКАЛА</h1>
             <p class="description-vocals">В студии 4LMUSIK можно записать песню на свадьбу или день рождения, сделать авторский продукт, годный для радио, записать аудио рекламу или озвучку для вашего видео ролика. Оплата почасовая.</p>
             <p class="price-vocals">от 1500₽</p>
-            <a href="#" class="button-vocals">ЗАКАЗАТЬ</a>
+            <a href="/Rate" class="button-vocals">ЗАКАЗАТЬ</a>
         </div>
         <div class="image-container-vocals">
             <img src="/Icons/headphones.svg">
@@ -150,7 +151,7 @@
             <h1 class="title-description-vocals">СВЕДЕНИЕ И МАСТЕРИНГ</h1>
             <p class="description-vocals">Ни одна песня не будет хорошо звучать без качественной обработки. В нашей студии вы можете заказать сведение и мастеринг своего проекта, записанного у нас или в любой другой студии звукозаписи.</p>
             <p class="price-vocals">от 5000₽</p>
-            <a href="#" class="button-vocals">ЗАКАЗАТЬ</a>
+            <a href="/Rate" class="button-vocals">ЗАКАЗАТЬ</a>
         </div>
         <div class="image-container-vocals">
             <img src="/Icons/ebashit.svg">
@@ -162,7 +163,7 @@
             <h1 class="title-description-vocals">АРАНЖИРОВКА</h1>
             <p class="description-vocals">Вам нужна аранжировка какой-либо песни для её исполнения или записи кавера? Наши музыканты подберут любую аранжировку по вашему желанию или напишут оригинальную по подобию высланных вами примеров.</p>
             <p class="price-vocals">от 6000₽</p>
-            <a href="#" class="button-vocals">ЗАКАЗАТЬ</a>
+            <a href="/Rate" class="button-vocals">ЗАКАЗАТЬ</a>
         </div>
         <div class="image-container-vocals">
             <img src="/Icons/pianinoballerino.svg">
@@ -174,7 +175,7 @@
             <h1 class="title-description-vocals">НАПИСАНИЕ ТЕКСТА</h1>
             <p class="description-vocals">Хотите сделать песню в подарок, но не можете придумать оригинальный текст? Наши авторы напишут текст для песни на свадьбу, день рождения, для трэка или батла на любую тему и в любом стиле по вашему референсу.</p>
             <p class="price-vocals">от 5000₽</p>
-            <a href="#" class="button-vocals">ЗАКАЗАТЬ</a>
+            <a href="/Rate" class="button-vocals">ЗАКАЗАТЬ</a>
         </div>
         <div class="image-container-vocals">
             <img src="/Icons/Notebook.svg">
@@ -202,5 +203,14 @@
     private void RefreshPage()
     {
         NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+    }
+
+    private void NavigateToServicePackages()
+    {
+        NavigationManager.NavigateTo("/ServicePackages");
+    }
+    private void NavigateToRate()
+    {
+        NavigationManager.NavigateTo("/Rate");
     }
 }

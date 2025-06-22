@@ -1,4 +1,5 @@
 ﻿@page "/Payment"
+@rendermode InteractiveServer
 @using _4Lv2.DateBase
 @using _4Lv2.Models
 @inject ModelContext EF
@@ -8,16 +9,16 @@
     <div class="payment-container">
         <div class="payment-title">ОПЛАТИТЕ ЗАКАЗ</div>
         <div class="form-group-payment">
-            <input class="input-payment" type="text" placeholder="НОМЕР КАРТЫ">
+            <input @bind="_pay.CardNumber" class="input-payment" type="text" placeholder="НОМЕР КАРТЫ">
         </div>
         <div class="form-group-payment">
-            <input class="input-payment" type="text" placeholder="СРОК ДЕЙСТВИЯ">
+            <input @bind="_pay.ValidityPeriod" class="input-payment" type="text" placeholder="СРОК ДЕЙСТВИЯ">
         </div>
         <div class="form-group-payment">
-            <input class="input-payment" type="password" placeholder="CVV">
+            <input @bind="_pay.CVV" class="input-payment" type="password" placeholder="CVV">
         </div>
         <div class="button-payment">
-            <button class="btn-payment">ОПЛАТИТЬ</button>
+            <button @onclick="Accept" class="btn-payment">ОПЛАТИТЬ</button>
         </div>
     </div>
 </div>
@@ -26,4 +27,38 @@
 @code {
     private Pay _pay = new Pay();
     private User AuthUser = new User();
+    private Record _record = new Record();
+    private bool IsAuth;
+
+    private void Accept()
+    {
+        CheckStatusAuth();
+        if (IsAuth)
+        {
+            AuthUser = EF.Users.FirstOrDefault(u => u.Id == AuthUser.Id);
+            _record = EF.Records.FirstOrDefault(r => r.Id == _record.Id);
+            _pay.DateStart=DateTime.Now;
+            NavigateToRecords();
+        }
+        else
+        {
+            NM.NavigateTo("/");
+        }
+    }
+
+    private async void CheckStatusAuth()
+    {
+    IsAuth = await LS.GetItemAsync<bool>("IsAuth"); 
+    AuthUser.Id = await LS.GetItemAsync<int>("UserId");
+    _record.Id = await LS.GetItemAsync<int>("RecordId");
+    }
+    protected override void OnInitialized()
+    {
+        CheckStatusAuth();
+    }
+
+    private void NavigateToRecords()
+    {
+        NM.NavigateTo("/records"); 
+    }
 }

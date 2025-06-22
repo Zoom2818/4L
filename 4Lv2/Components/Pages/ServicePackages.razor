@@ -1,25 +1,32 @@
 ﻿@page "/ServicePackages"
+@rendermode InteractiveServer
+@using _4Lv2.DateBase
+@using _4Lv2.Models
+@inject ModelContext EF
+@inject NavigationManager NM
+@inject Blazored.LocalStorage.ILocalStorageService LS
 <div class="window-SP">
     <div class="cont-SP">
         <p class="SP-title">ЗАПИСЬ НА ПАКЕТ УСЛУГ</p>
-        <input class="SP-text" type="text" placeholder="ИМЯ" required>
+        <input @bind="_user.Login" class="SP-text" type="text" placeholder="ИМЯ" required>
         <div class="inline">
-            <input class="SP-text2" type="tel" placeholder="ТЕЛЕФОН" required>
+            <input @bind="_user.Password" class="SP-text2" type="password" placeholder="ПАРОЛЬ" required>
             <input class="SP-text2" type="email" placeholder="ПОЧТА" required>
         </div>
         <div class="inline2">
             <label class="SP" for="package">ВЫБЕРИТЕ ПАКЕТ</label>
-            <select class="window" id="package"> 
-                <option value="light">LIGHT</option>
-                <option value="medium">MEDIUM</option>
-                <option value="pro">PRO</option>
+            <select @bind="_servicePackages.Id" class="window" id="package"> 
+                <option value="1">LIGHT</option>
+                <option value="2">MEDIUM</option>
+                <option value="3">PRO</option>
+                <!-- Модели в БД соответсвуют value контейнеров option -->
             </select>
 
-            <input class="date-SP" type="date" placeholder="ДАТА" required>
+            <input @bind="_record.DateStart" class="date-SP" type="date" placeholder="ДАТА" required>
         </div>
         
-
-        <button class="btn-SP" type="submit">ЗАПИСАТЬСЯ</button>
+        @Message
+        <button @onclick="CreateRecord" class="btn-SP" type="submit">ЗАПИСАТЬСЯ</button>
     </div>
 </div>
 
@@ -27,5 +34,29 @@
 
 
 @code {
+    private User _AuthUser = new User();
+    private User _user = new User();
+    private Record _record = new Record();
+    private PackageServices _servicePackages = new PackageServices();
+    private string Message;
     
+    private void CreateRecord()
+    {
+        _AuthUser = EF.Users.FirstOrDefault(u => u.Login == _user.Login && u.Password == _user.Password);
+        if (_AuthUser!=null)
+        {
+            _record.UserId = _AuthUser.Id;
+            _record.PackageServicesId = _servicePackages.Id;
+            _record.DateStart = DateTime.Now;
+            EF.Add(_record);
+            EF.SaveChanges();
+            NM.NavigateTo("/Payment");
+            LS.SetItemAsync("RecordId", _record.Id);
+        }
+        else
+        {
+            Message = "Зарегестрируйте";
+        }
+    }
+
 }

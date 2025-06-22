@@ -34,6 +34,7 @@
         EF.Add(_user);
         EF.SaveChanges();
         LS.SetItemAsync("IsAuth", true);
+        LS.SetItemAsync("UserId", _user.Id);
         NM.NavigateTo("/");
     }
 
@@ -43,6 +44,7 @@
         if (AuthUser != null && AuthUser.Password == _user.Password)
         {
             LS.SetItemAsync("IsAuth", true);
+            LS.SetItemAsync("UserId", AuthUser.Id);
             NM.NavigateTo("/");
         }
         else

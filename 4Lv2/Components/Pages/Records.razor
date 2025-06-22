@@ -1,0 +1,63 @@
+﻿@page "/Records"
+@using _4Lv2.DateBase
+@using _4Lv2.Models
+@inject ModelContext EF
+@inject NavigationManager NM
+@inject Blazored.LocalStorage.ILocalStorageService LS
+<div class="Records">
+<div class="Records-container">
+    <div class="Records-title">ПРОФИЛЬ</div>
+    <div class="Records-tab">ИСТОРИЯ ЗАПИСЕЙ</div>
+    <div class="Records-table-container">
+        <table>
+            <thead>
+            <tr>
+                <th>Название услуги</th>
+                <th style="text-align:center;">Дата</th>
+                <th style="text-align:center;">Оплата</th>
+            </tr>
+            </thead>
+            <tbody>
+            @Message
+            @foreach (var rec in _records)
+            {
+                <tr>
+                    <th>@rec.Service.Name @rec.PackageServices.Name</th>
+                    <th style="text-align:center;">@rec.DateStart</th>
+                    <th style="text-align:center;">@rec.Pay.IsCompleted</th>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+@code {
+    private User _AuthUser = new User();
+    private bool IsAuth;
+    private List<Record> _records = new List<Record>();
+    private string Message;
+    
+    protected override void OnInitialized()
+    {
+        LoadRecords();
+    }
+
+    private async void LoadRecords()
+    {
+    IsAuth = await LS.GetItemAsync<bool>("IsAuth");
+    if (IsAuth)
+        {
+            _AuthUser.Id = await LS.GetItemAsync<int>("UserId");
+            _AuthUser = EF.Users.FirstOrDefault(u => u.Id == _AuthUser.Id);
+            _records = EF.Records.OrderBy(r => r.UserId == _AuthUser.Id).ToList();
+            
+        }
+        else
+        {
+            Message = "Вы не авторизованы";
+        }
+    }
+
+}

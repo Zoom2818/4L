@@ -1,27 +1,64 @@
 ﻿@page "/Rate"
+@using _4Lv2.DateBase
+@using _4Lv2.Models
+@inject ModelContext EF
+@inject NavigationManager NM
+@inject Blazored.LocalStorage.ILocalStorageService LS
 <div class="window-SP">
     <div class="cont-SP">
         <p class="SP-title">ЗАПИСЬ НА ТАРИФ</p>
-        <input class="SP-text" type="text" placeholder="ИМЯ" required>
+        <input @bind="_user.Login" class="SP-text" type="text" placeholder="ИМЯ" required>
         <div class="inline">
-            <input class="SP-text2" type="tel" placeholder="ТЕЛЕФОН" required>
+            <input @bind="_user.Password" class="SP-text2" type="tel" placeholder="ПАРОЛЬ" required>
             <input class="SP-text2" type="email" placeholder="ПОЧТА" required>
         </div>
         <div class="inline2">
             <label class="SP" for="rate">ВЫБЕРИТЕ ТАРИФ</label>
-            <select class="window" id="package">
-                <option value="vocal recording">ЗАПИСЬ ВОКАЛА</option>
-                <option value="mixing and mastering">СВЕДЕНИЕ И МАСТЕРИНГ</option>
+            <select @bind="_service.Id" class="window" id="package">
+                @foreach (var serv in _services)
+                {
+                <option value="@serv.Id">@serv.Name</option>
+                }
+                
+                <!-- <option value="mixing and mastering">СВЕДЕНИЕ И МАСТЕРИНГ</option>
                 <option value="arrangement">АРАНЖИРОВКА</option>
-                <option value="writing text">НАПИСАНИЕ ТЕКСТА</option>
+                <option value="writing text">НАПИСАНИЕ ТЕКСТА</option> -->
             </select>
 
-            <input class="date-SP" type="date" placeholder="ДАТА" required>
+            <input @bind="_record.DateStart" class="date-SP" type="date" placeholder="ДАТА" required>
         </div>
 
 
-        <button class="btn-SP" type="submit">ЗАПИСАТЬСЯ</button>
+        <button @onclick="CreateRecord" class="btn-SP" type="submit">ЗАПИСАТЬСЯ</button>
     </div>
 </div>
 
 
+@code
+{
+    private User _AuthUser = new User();
+    private List<Service> _services = new List<Service>();
+    private Service _service = new Service();
+    private User _user = new User();
+    private Record _record = new Record();
+
+    private void CreateRecord()
+    {
+        _AuthUser = EF.Users.FirstOrDefault(u => u.Login == _user.Login && u.Password == _user.Password);
+        if (_AuthUser != null)
+        {
+            _record.ServiceId = _service.Id;
+            _record.UserId = _AuthUser.Id;
+            _record.DateStart = DateTime.Now;
+            LS.SetItemAsync("RecordId", _record.Id);
+            EF.Add(_record);
+            EF.SaveChanges();
+            NM.NavigateTo("/Payment");
+        }
+    }
+    
+    protected override void OnInitialized()
+    {
+        _services = EF.Services.ToList();
+    }
+}

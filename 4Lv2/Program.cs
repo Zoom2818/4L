@@ -1,6 +1,7 @@
 using _4Lv2.Components;
 using _4Lv2.DateBase;
 using Blazored.LocalStorage;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,5 +28,8 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+var scope = app.Services.CreateScope();
+var context = scope.ServiceProvider.GetRequiredService<ModelContext>();
+context.Database.Migrate();
 
 app.Run();
